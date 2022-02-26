@@ -13,6 +13,16 @@ import { MatListModule } from '@angular/material/list';
 import { NavComponent } from 'src/components/templates/nav/nav.component';
 import { HomeComponent } from 'src/views/home/home.component';
 import { ProductCrudComponent } from 'src/views/product-crud/product-crud.component';
+import { ProductCreateComponent } from 'src/components/product/product-create/product-create.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -22,6 +32,7 @@ import { ProductCrudComponent } from 'src/views/product-crud/product-crud.compon
     NavComponent,
     HomeComponent,
     ProductCrudComponent,
+    ProductCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -29,8 +40,17 @@ import { ProductCrudComponent } from 'src/views/product-crud/product-crud.compon
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
+    MatListModule,
     MatCardModule,
-    MatListModule
+    MatButtonModule,
+    MatSnackBarModule,
+    HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
