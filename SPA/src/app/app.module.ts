@@ -23,6 +23,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { ProductReadComponent } from 'src/components/product/product-read/product-read.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { MatSortModule } from '@angular/material/sort';
     NavComponent,
     HomeComponent,
     ProductCrudComponent,
-    ProductCreateComponent
+    ProductCreateComponent,
+    ProductReadComponent,
   ],
   imports: [
     BrowserModule,
