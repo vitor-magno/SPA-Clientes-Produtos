@@ -1,0 +1,37 @@
+<mat-card>
+    <mat-card-title>Confirmar Exclusão do Produto</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Codigo do Produto"
+                [value]="product.CodigoProduto" name="CodigoProduto">
+        </mat-form-field>
+        
+        <mat-form-field>
+            <input matInput placeholder="Nome Produto"
+                [value]="product.Nome" name="Nome">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Nacional ou Importado"
+                [value]="product.Fabricacao" name="Fabricacao">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Tamanho"
+                [value]="product.Tamanho" name="Tamanho">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Preço (R$)"
+                [value]="product.Valor" name="Valor">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="deleteProduct()" color="primary">
+        Excluir
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
+

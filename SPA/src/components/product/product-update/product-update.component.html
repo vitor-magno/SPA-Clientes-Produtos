@@ -1,0 +1,37 @@
+<mat-card>
+    <mat-card-title>Alterar Produto</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Codigo do Produto"
+                [(ngModel)]="product.CodigoProduto" name="CodigoProduto">
+        </mat-form-field>
+        
+        <mat-form-field>
+            <input matInput placeholder="Nome Produto"
+                [(ngModel)]="product.Nome" name="Nome">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Nacional ou Importado"
+                [(ngModel)]="product.Fabricacao" name="Fabricacao">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Tamanho"
+                [(ngModel)]="product.Tamanho" name="Tamanho">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Preço (R$)"
+                [(ngModel)]="product.Valor" name="Valor">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="updateProduct()" color="primary">
+        Atualizar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
+
