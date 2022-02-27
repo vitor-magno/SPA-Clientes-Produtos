@@ -26,6 +26,8 @@ import { MatSortModule } from '@angular/material/sort';
 import { ProductReadComponent } from 'src/components/product/product-read/product-read.component';
 import { ProductUpdateComponent } from 'src/components/product/product-update/product-update.component';
 import { ProductDeleteComponent } from 'src/components/product/product-delete/product-delete.component';
+import { ClientCreateComponent } from 'src/components/clientes/client-create/client-create.component';
+import { ClientReadComponent } from 'src/components/clientes/client-read/client-read.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { ProductDeleteComponent } from 'src/components/product/product-delete/pr
     ProductCreateComponent,
     ProductReadComponent,
     ProductUpdateComponent,
-    ProductDeleteComponent
+    ProductDeleteComponent,
+    ClientCreateComponent,
+    ClientReadComponent
   ],
   imports: [
     BrowserModule,
