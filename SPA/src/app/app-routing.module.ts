@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ClientCreateComponent } from 'src/components/clientes/client-create/client-create.component';
+import { ClientDeleteComponent } from 'src/components/clientes/client-delete/client-delete.component';
 import { ClientUpdateComponent } from 'src/components/clientes/client-update/client-update.component';
 import { ProductCreateComponent } from 'src/components/product/product-create/product-create.component';
 import { ProductDeleteComponent } from 'src/components/product/product-delete/product-delete.component';
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: "client/update/:id",
     component: ClientUpdateComponent
+  },
+  {
+    path: "client/delete/:id",
+    component: ClientDeleteComponent
   },
 ];
 

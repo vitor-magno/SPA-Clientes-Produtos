@@ -2,7 +2,7 @@
     <mat-card-title>Confirmar Exclusão do Produto</mat-card-title>
     <form>
         <mat-form-field>
-            <input matInput placeholder="Codigo do Produto"
+            <input matInput placeholder="Codigo do Produto" type="number"
                 [value]="product.CodigoProduto" name="CodigoProduto">
         </mat-form-field>
         
@@ -22,7 +22,7 @@
         </mat-form-field>
 
         <mat-form-field>
-            <input matInput placeholder="Preço (R$)"
+            <input matInput placeholder="Preço (R$)" type="number"
                 [value]="product.Valor" name="Valor">
         </mat-form-field>
     </form>

@@ -29,6 +29,7 @@ import { ProductDeleteComponent } from 'src/components/product/product-delete/pr
 import { ClientCreateComponent } from 'src/components/clientes/client-create/client-create.component';
 import { ClientReadComponent } from 'src/components/clientes/client-read/client-read.component';
 import { ClientUpdateComponent } from 'src/components/clientes/client-update/client-update.component';
+import { ClientDeleteComponent } from 'src/components/clientes/client-delete/client-delete.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { ClientUpdateComponent } from 'src/components/clientes/client-update/cli
     ProductDeleteComponent,
     ClientCreateComponent,
     ClientReadComponent,
-    ClientUpdateComponent
+    ClientUpdateComponent,
+    ClientDeleteComponent
   ],
   imports: [
     BrowserModule,

@@ -1,33 +1,33 @@
 <mat-card>
-    <mat-card-title>Alterar Cliente</mat-card-title>
+    <mat-card-title>Confirmar Exclusão do Cliente</mat-card-title>
     <form>
         <mat-form-field>
-            <input  type="number"  matInput placeholder="Codigo do Cliente"
-                [(ngModel)]="clientesDados.CodigoCliente" name="CodigoCliente">
+            <input matInput placeholder="Codigo do Cliente"  type="number"
+                [value]="client.CodigoCliente" name="CodigoProduto">
         </mat-form-field>
         
         <mat-form-field>
             <input matInput placeholder="Nome Cliente"
-                [(ngModel)]="clientesDados.Nome" name="Nome">
+                [value]="client.Nome" name="Nome">
         </mat-form-field>
 
         <mat-form-field>
             <input matInput placeholder="CPF"
-                [(ngModel)]="clientesDados.CPF" name="CPF">
+                [value]="client.CPF" name="CPF">
         </mat-form-field>
 
         <mat-form-field>
             <input matInput placeholder="Sexo"
-                [(ngModel)]="clientesDados.Sexo" name="Sexo">
+                [value]="client.Sexo" name="Sexo">
         </mat-form-field>
 
         <mat-form-field>
             <input matInput placeholder="Email"
-                [(ngModel)]="clientesDados.Email" name="Email">
+                [value]="client.Email" name="Email">
         </mat-form-field>
     </form>
-    <button mat-raised-button (click)="updateClient()" color="primary">
-        Atualizar
+    <button mat-raised-button (click)="deleteClient()" color="primary">
+        Excluir
     </button>
     
     <button mat-raised-button (click)="cancel()">

@@ -2,7 +2,7 @@
     <mat-card-title>Novo Produto</mat-card-title>
     <form>
         <mat-form-field>
-            <input matInput placeholder="Codigo do Produto"
+            <input matInput placeholder="Codigo do Produto"  type="number"
                 [(ngModel)]="product.CodigoProduto" name="CodigoProduto">
         </mat-form-field>
         
@@ -22,7 +22,7 @@
         </mat-form-field>
 
         <mat-form-field>
-            <input matInput placeholder="Preço (R$)"
+            <input matInput placeholder="Preço (R$)"  type="number"
                 [(ngModel)]="product.Valor" name="Valor">
         </mat-form-field>
     </form>

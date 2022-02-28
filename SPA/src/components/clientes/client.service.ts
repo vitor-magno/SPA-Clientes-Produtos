@@ -9,7 +9,7 @@ import { Client } from "./client.model";
   providedIn: "root",
 })
 export class ClientService {
-  baseUrl = "http://192.168.12.5:3001/client";
+  baseUrl = "http://192.168.12.5:3000/api/clientes";
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) {}
 
@@ -37,7 +37,8 @@ export class ClientService {
   }
 
   readById(id: number): Observable<Client> {
-    const url = `${this.baseUrl}/${id}`;
+    const url = `${this.baseUrl}/?id=${id}`;
+    console.log(url)
     return this.http.get<Client>(url).pipe(
       map((obj) => obj),
       catchError((e) => this.errorHandler(e))
@@ -45,7 +46,7 @@ export class ClientService {
   }
 
   update(client: Client): Observable<Client> {
-    const url = `${this.baseUrl}/${client.id}`;
+    const url = `${this.baseUrl}/?id=${client.id}`;
     return this.http.put<Client>(url, client).pipe(
       map((obj) => obj),
       catchError((e) => this.errorHandler(e))
@@ -53,7 +54,7 @@ export class ClientService {
   }
 
   delete(id: number): Observable<Client> {
-    const url = `${this.baseUrl}/${id}`;
+    const url = `${this.baseUrl}/?id=${id}`;
     return this.http.delete<Client>(url).pipe(
       map((obj) => obj),
       catchError((e) => this.errorHandler(e))
