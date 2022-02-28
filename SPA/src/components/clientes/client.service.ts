@@ -9,7 +9,7 @@ import { Client } from "./client.model";
   providedIn: "root",
 })
 export class ClientService {
-  baseUrl = "http://localhost:3001/clientes";
+  baseUrl = "http://192.168.12.5:3001/client";
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) {}
 
