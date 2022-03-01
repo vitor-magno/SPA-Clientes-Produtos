@@ -27,9 +27,6 @@ export class ClientUpdateComponent implements OnInit {
 
     let  id:any
     id = this.route.snapshot.paramMap.get("id");
-
-      console.log( this.route.snapshot.paramMap.get("id"))
-
     this.clientService.readById(id).subscribe((client) => {
       
       this.clientesDados =  client

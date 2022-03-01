@@ -23,7 +23,6 @@ export class ClientDeleteComponent implements OnInit {
    
     this.id  = this.route.snapshot.paramMap.get('id');
     this.clientService.readById(this.id).subscribe((client) => {
-      console.log(client)
       this.client = client
     });
   }

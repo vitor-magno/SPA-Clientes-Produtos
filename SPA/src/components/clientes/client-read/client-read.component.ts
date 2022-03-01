@@ -11,14 +11,13 @@ export class ClientReadComponent implements OnInit {
 
   clients:  Client[]
   displayedColumns = ['CodigoCliente', 'Nome', 'CPF', 'Sexo', 'Email', 'Action']
-  madara:any;
+  dados:any;
   constructor(private clientService: ClientService) { }
 
   ngOnInit(): void {
     this.clientService.read().subscribe(clients => {
-      console.log(clients)
-      this.madara = clients
-      this.clients = this.madara.resposta
+      this.dados = clients
+      this.clients = this.dados.resposta
     })
   }
 

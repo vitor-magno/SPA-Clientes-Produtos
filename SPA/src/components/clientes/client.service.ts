@@ -38,7 +38,6 @@ export class ClientService {
 
   readById(id: number): Observable<Client> {
     const url = `${this.baseUrl}/?id=${id}`;
-    console.log(url)
     return this.http.get<Client>(url).pipe(
       map((obj) => obj),
       catchError((e) => this.errorHandler(e))
